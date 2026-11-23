@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">震感捕手</string>
+    <string name="hint_host">K10 地址，例如 192.168.4.1</string>
+</resources>

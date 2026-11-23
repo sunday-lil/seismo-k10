@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.tmp/
+.pv/
+*.log
+.gradle/
+build/
+.DS_Store
+Thumbs.db

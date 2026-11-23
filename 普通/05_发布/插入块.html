@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<title>插入块（复制到帖子）</title>
+<style>body{max-width:760px;margin:30px auto;font:15px/1.8 "Microsoft YaHei",sans-serif;color:#222}
+h2{border-left:5px solid #1B998B;padding-left:10px;font-size:20px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid #ccc;padding:6px 8px}
+th{background:#1B998B;color:#fff}
+blockquote{background:#F1F8F6;border-left:4px solid #1B998B;margin:12px 0;padding:10px 14px}
+</style></head><body>
+<div id="a">
+<blockquote><p><strong>和同类 K10 地震波作品的区别</strong></p>
+<p>① 别人测“波速”（要压电陶瓷 + 双通道采集），我们测“振幅衰减”，只用板载三轴加速度计；<br>
+② 我们做了盲测：3 个未知距离由模型反推，平均误差 7.9%；<br>
+③ 附三课时教案、学生学案与评价量表，可直接进课堂。</p></blockquote>
+</div>
+<hr>
+<div id="b">
+<h2>九、复刻清单</h2>
+<p>一页看完：买什么、怎么接、参数怎么调、会在哪卡住。</p>
+<table><thead><tr><th>件</th><th>规格</th><th>数量</th><th>参考价</th></tr></thead><tbody>
+<tr><td>行空板 K10</td><td>DFR0992-EN</td><td>1</td><td>¥299</td></tr>
+<tr><td>钢球</td><td>直径 20 mm</td><td>1</td><td>¥3</td></tr>
+<tr><td>纸筒 / PVC 管</td><td>内径 25 mm，长 500 mm</td><td>1</td><td>¥5</td></tr>
+<tr><td>钢片</td><td>100 × 60 × 2 mm</td><td>1</td><td>¥5</td></tr>
+<tr><td>卷尺</td><td>3 m</td><td>1</td><td>¥8</td></tr>
+<tr><td>TF 卡</td><td>8 GB 以上，FAT32</td><td>1</td><td>¥15</td></tr>
+<tr><td>长桌</td><td>≥2.2 m，或两张课桌拼接</td><td>1</td><td>—</td></tr>
+</tbody></table>
+<p><strong>关键参数</strong>：采样 200 Hz、触发 0.05 g、记录触发前 1 s + 触发后 4 s、报警 0.25 g。都在 main.cpp 顶部宏里改。</p>
+<p><strong>30 分钟上手</strong>：① 粘贴 main.cpp 到 Mind+ 代码模式，板型选行空板 K10，上传；② 插 TF 卡上电，静置 10 s；③ 按 A 键，屏幕变“等待触发”，丢球；④ 4 s 后出峰值/主频/时长；⑤ 换测点改 DIST_M 重烧。</p>
+<p><strong>我们踩过的坑</strong>（写出来省你两小时）：</p>
+<ul>
+<li>PGA 一直显示 1.936 g —— 板子平放时 Z 轴约 −936 mg，忘了减基线就直接取绝对值；上电先做 0.5 s 基线校准。</li>
+<li>数据写不进卡 —— 路径要写 <code>S:/</code>，不是 <code>/sdcard/</code>。</li>
+<li>串口看不到输出 —— 波特率改成 115200。</li>
+<li>两次测量差很多 —— 移动测点时碰了桌子；测点画框，每次放回同一点。</li>
+</ul>
+<p>完整版（三课时教案、学生学案、评价量表）见附件《震感捕手_教学实施包》。</p>
+</div>
+</body></html>
