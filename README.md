@@ -45,7 +45,7 @@
 |---|---|---|
 | 震感捕手 v1.0 | https://mc.dfrobot.com.cn/article-387097.html | 已发布 · 精华 |
 | 震感捕手 v1.1 | https://mc.dfrobot.com.cn/article-387228.html | 已发布 |
-| 追光台 | — | 待投稿（数据为仿真示例） |
+| 追光台（赛道五） | https://mc.dfrobot.com.cn/article-387421.html | 已发布 |
 
 详细进度与已知问题见 [STATUS.md](STATUS.md)，修了什么见 [CHANGELOG.md](CHANGELOG.md)。
 

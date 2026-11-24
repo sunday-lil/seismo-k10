@@ -82,3 +82,10 @@ adb install -r "web\02_代码\震感捕手_遥测版.apk"
 仓库：https://github.com/sunday-lil/seismo-k10 （191 个文件，公开）
 
 自检：`python tools/check_repo.py`
+
+## 六、追光台（赛道五，2026-11-24 发布）
+
+- 帖子：https://mc.dfrobot.com.cn/article-387421.html
+- 代码：`solar/02_代码/K10端/main_solar.cpp`
+- 数据：`solar/03_数据/`（脚本生成），文末一行小字说明
+- 图：装置示意 + 余弦定律 + 三条功率曲线 + 净能量柱状图
