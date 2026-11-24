@@ -70,6 +70,10 @@ adb install -r "web\02_代码\震感捕手_遥测版.apk"
 | 3 | `waitButtonB()` 无超时 | B 键失灵时整机卡死 | 加 15 s 超时 |
 | 4 | 遥测版同一个峰值窗口问题 | 同 1 | 同 1 |
 
+2026-11-24：主帖已重传 v1.2 附件（5,119,715 B，与本地字节一致），
+正文「26 页」改为「27 页」，文档第五章代码节选同步为 `i0 = trigIdx - 5`。
+线上打包内已核验：固件含 `trigIdx - 5`、`WAVE_H 142`，文档不再出现「只看触发后 0.05」。
+
 仓库：https://github.com/sunday-lil/seismo-k10 （191 个文件，公开）
 
 自检：`python tools/check_repo.py`
