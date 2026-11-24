@@ -634,15 +634,24 @@ for (int i = 0; i < baseN; i++) {          // 触发前基线
 }
 bx /= baseN;  by /= baseN;  bz /= baseN;
 
+/* 峰值窗口从触发点前 5 个样本开始。
+ * 触发条件是“连续 3 个样本超阈值”，冲击峰值通常就在触发点前后几毫秒；
+ * 若从触发后再起算，会系统性漏掉峰值本身。 */
+int i0 = trigIdx - 5;
+int i1 = trigIdx + (int)(FS_HZ * 1.5f);    // 峰值只看 1.5 s
+
 float pga = 0;  char axis = 'X';
-for (int i = i0; i < i1; i++) {            // 只看触发后 0.05~1.5 s
+for (int i = i0; i < i1; i++) {
   float ax = fabsf((burst[i].x - bx) * ACC_TO_G);
   float ay = fabsf((burst[i].y - by) * ACC_TO_G);
   float az = fabsf((burst[i].z - bz) * ACC_TO_G);
   if (ax > pga) { pga = ax; axis = 'X'; }
   if (ay > pga) { pga = ay; axis = 'Y'; }
   if (az > pga) { pga = az; axis = 'Z'; }
-}"""))]
+}
+
+/* 主频与时长改用触发后窗口（f0），避开触发前噪声 */
+int f0 = trigIdx;"""))]
 
     B += [("h2", "5.4 核心片段三：幂律拟合与盲测（电脑端）")]
     B += [("p",
