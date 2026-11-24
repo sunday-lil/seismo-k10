@@ -30,6 +30,12 @@
 │   ├── 04_图片/          三张图 + 装置示意
 │   └── 05_发布/          发帖正文
 │
+├── chaos/               双摆混沌（已发布）
+│   ├── 01_作品文档/      选题说明
+│   ├── 02_代码/          K10 实时积分 + 仿真
+│   ├── 03_数据/          分离曲线、可预报时长
+│   └── 04_图片/          三张图
+│
 ├── drop/                闪传节点（实验性，未投稿）
 │   └── 02_代码/K10端/main_drop.cpp   浏览器跨系统互传
 │
@@ -46,6 +52,7 @@
 | 震感捕手 v1.0 | https://mc.dfrobot.com.cn/article-387097.html | 已发布 · 精华 |
 | 震感捕手 v1.1 | https://mc.dfrobot.com.cn/article-387228.html | 已发布 |
 | 追光台（赛道五） | https://mc.dfrobot.com.cn/article-387421.html | 已发布 |
+| 双摆混沌 | https://mc.dfrobot.com.cn/article-387422.html | 已发布 |
 
 详细进度与已知问题见 [STATUS.md](STATUS.md)，修了什么见 [CHANGELOG.md](CHANGELOG.md)。
 
