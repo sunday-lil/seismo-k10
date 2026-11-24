@@ -36,6 +36,12 @@
 │   ├── 03_数据/          分离曲线、可预报时长
 │   └── 04_图片/          三张图
 │
+├── reverb/              教室混响 T60（已发布）
+│   ├── 01_作品文档/      选题说明
+│   ├── 02_代码/          K10 采集拟合 + 仿真
+│   ├── 03_数据/          脉冲响应、房间参数
+│   └── 04_图片/          三张图
+│
 ├── drop/                闪传节点（实验性，未投稿）
 │   └── 02_代码/K10端/main_drop.cpp   浏览器跨系统互传
 │
@@ -53,6 +59,7 @@
 | 震感捕手 v1.1 | https://mc.dfrobot.com.cn/article-387228.html | 已发布 |
 | 追光台（赛道五） | https://mc.dfrobot.com.cn/article-387421.html | 已发布 |
 | 双摆混沌 | https://mc.dfrobot.com.cn/article-387422.html | 已发布 |
+| 教室混响 T60 | https://mc.dfrobot.com.cn/article-387423.html | 已发布 |
 
 详细进度与已知问题见 [STATUS.md](STATUS.md)，修了什么见 [CHANGELOG.md](CHANGELOG.md)。
 

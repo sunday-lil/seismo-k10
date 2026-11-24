@@ -96,3 +96,9 @@ adb install -r "web\02_代码\震感捕手_遥测版.apk"
 - 帖子：https://mc.dfrobot.com.cn/article-387422.html
 - λ = 0.93 /s，可预报时长 1.9 / 3.8 / 6.5 / 7.9 s
 - 正文 3 图 + 1 附件（301 KB），已核验
+
+## 八、教室混响 T60（2026-11-24 发布）
+
+- 帖子：https://mc.dfrobot.com.cn/article-387423.html
+- 三间房 T60：0.55 / 1.16 / 2.60 s；与 Sabine 偏差 9–17%
+- 正文 3 图 + 1 附件，已核验
