@@ -1,0 +1,44 @@
+{
+ "source": "示例（仿真）",
+ "P0_mW": 458.0,
+ "eta": 0.77,
+ "exp1": {
+  "angles": [
+   0.0,
+   15.0,
+   30.0,
+   45.0,
+   60.0
+  ],
+  "p_meas_mW": [
+   460.3,
+   438.3,
+   390.7,
+   315.3,
+   218.8
+  ],
+  "p_theory_mW": [
+   458.0,
+   442.4,
+   396.6,
+   323.9,
+   229.0
+  ],
+  "max_rel_err_pct": 4.4,
+  "mean_rel_err_pct": 2.0
+ },
+ "exp2": {
+  "hours": 6.0,
+  "E_fixed_mWh": 1433,
+  "E_cont_mWh": 2116,
+  "E_db_mWh": 2109,
+  "C_cont_mWh": 480,
+  "C_db_mWh": 64,
+  "net_fixed": 1433,
+  "net_cont": 1636,
+  "net_db": 2045,
+  "moves": 12,
+  "gain_cont_pct": 14.1,
+  "gain_db_pct": 42.7
+ }
+}
